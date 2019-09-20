@@ -1,0 +1,6 @@
+{
+    "mongoURI":"mongodb+srv://shehan:shehan@devconnector-txrmo.mongodb.net/test?retryWrites=true&w=majority",
+    "Jwtsecret":"mysecret",
+    "githubclientid":"3c5bfd94681bfa49a176",
+    "githubsecret":"c876cbb1e75f5ffc34f0c0f00f30d67aced73f28"
+}

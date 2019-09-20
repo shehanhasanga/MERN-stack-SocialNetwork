@@ -1,0 +1,65 @@
+ self-motivated individual with
+ adapt to new technologies. 
+Passionate in coding, learning new technologies
+and engineering software solutions. 
+
+
+
+A Self motivated, self learning individual with hard working.I enthusiasm for technology to gain
+expertise in the field of computer science. I  Seek to continuously improve myself by learning new skills and
+developing existing skills.
+
+
+
+/home/shehan/Desktop/rect
+
+http://localhost:5000/api/users
+http://localhost:5000/api/auth
+http://localhost:5000/api/auth -> post
+{
+	"email":"techguyinfo1@gmail.com",
+	"password":"shehan"
+	
+}
+
+http://localhost:5000/api/profile/me
+http://localhost:5000/api/profile/me  -> post
+	{
+	"status":"developer",
+	"skills":"php,java,html",
+	"company":"shehan11co",
+	"location":"srilanka",
+	"bio":"shehan112 karuna",
+	"facebook":"shehan112@facebook.com",
+	"twitter":"shehan112@twtter.com",
+	"youtube":"shehan112@youtube.com",
+	"githubusername":"shehan112hasanga"
+}
+
+http://localhost:5000/api/profile
+http://localhost:5000/api/profile/user/5d81aed70cc83d705fd31283
+http://localhost:5000/api/profile -> delete
+http://localhost:5000/api/profile/experience -> put
+{
+	"title":"developer",
+	"company":"shehancom",
+	"location":"srilanka",
+	"from":"8-10-2010",
+	"current":true,
+	"description":"create projects and courses on web development"
+}
+
+http://localhost:5000/api/profile/experience/5d81ba06af02730df454c0bf -> delete
+
+http://localhost:5000/api/profile/education -> put
+
+{
+	"school":"new school",
+	"degree":"com science",
+	"fieldofstudy":"com science",
+	"from":"8-10-2010",
+	"to":"8-10-2014",
+	"description":"get degree associate with computer science"
+}
+
+

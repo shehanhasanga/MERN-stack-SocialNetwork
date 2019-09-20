@@ -3,6 +3,8 @@ import axios from 'axios';
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux';
 import {setAlert} from '../../actions/alert';
+import {registeract} from '../../actions/auth';
+
 class register extends React.Component {
     constructor(props) {
         super(props);
@@ -28,6 +30,7 @@ class register extends React.Component {
             this.props.setAlert('password not matched','danger',2000)
         }else{
           console.log("password matched");
+          this.props.registeract({name,email,password})
             // const newuser = {
             //   name ,email , password
             // }
@@ -55,7 +58,7 @@ class register extends React.Component {
                 <input type="text" placeholder="Name" name="name" onChange={this.handleChange} required />
                 </div>
                 <div className="form-group">
-                <input type="email" placeholder="Email Address" name="email" onChange={this.handleChange}  required/>
+                <input type="email" placeholder="Email Address" name="email" onChange={this.handleChange}/>
                 <small className="form-text"
                     >This site uses Gravatar so if you want a profile image, use a
                     Gravatar email</small
@@ -91,4 +94,4 @@ class register extends React.Component {
       }
 }
 
-export default connect(null,{setAlert})(register);
+export default connect(null,{setAlert,registeract})(register);

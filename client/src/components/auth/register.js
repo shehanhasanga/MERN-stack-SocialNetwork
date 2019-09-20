@@ -1,6 +1,8 @@
 import React,{Fragment} from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom'
+import {connect} from 'react-redux';
+import {setAlert} from '../../actions/alert';
 class register extends React.Component {
     constructor(props) {
         super(props);
@@ -23,6 +25,7 @@ class register extends React.Component {
         const {name,email,password,password2}=this.state;
         if(password!==password2){
             console.log("password not matched");
+            this.props.setAlert('password not matched','danger',2000)
         }else{
           console.log("password matched");
             // const newuser = {
@@ -88,4 +91,4 @@ class register extends React.Component {
       }
 }
 
-export default register;
+export default connect(null,{setAlert})(register);
